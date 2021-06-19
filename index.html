@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link rel="stylesheet" href="style.css">
+        </head>
+        <title> MY FAMILY BOOK</title>
+    <body>
+        <h1>My Family Book </h1>
+        <hr> <hr> 
+        <img id="family_time" src="https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg">
+        <h3 id="one"> 1. Our Family Book</h3>
+        <button type="button" onclick="family()"> Next</button>
+        <hr>
+        <script>
+            var names=[
+                "2.My Father( Tarun Arora)",
+                "3.My Mother( Ankita Arora)",
+                "4.My sister( Niyati Arora)",
+                "5.Me( Vardhini Arora)",
+               
+            ];
+            var images=[
+              "https://photos.app.goo.gl/JkQundjFyeaNN6v37"
+              "https://photos.app.goo.gl/CoPhpcHuroX98gfg8"
+              "https://photos.app.goo.gl/JDGPKJqhCsY2auTc8"
+              "https://photos.app.goo.gl/W7nu3ayERHyb1d8c7"
+              ];
+            var i=0;
+            function family(){
+                document.getElementById("one").innerHTML=name[i];
+                document.getElementById("family_time").src=images[i];
+                i++;
+                if(i==4){
+                    i=0;
+                }
+            }
+        </script>
+    </body>
+</html>
